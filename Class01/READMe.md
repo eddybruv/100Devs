@@ -8,4 +8,4 @@
 - Also learned what the Internet is.
 - Did some html syntax
 
-READY TO DIVE INTO THE NEXT CLASS
+## READY TO DIVE INTO THE NEXT CLASS

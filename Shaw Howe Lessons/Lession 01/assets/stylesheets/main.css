@@ -2,48 +2,130 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+my_color : #92BFD4;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-  list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-  quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*
@@ -52,22 +134,22 @@ table {
   ===========================================
 */
 
-*, 
+*,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .container {
-  width: 960px;
-  padding-left: 30;
-  padding-right: 30;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+    width: 960px;
+    padding-left: 30;
+    padding-right: 30;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
@@ -76,8 +158,12 @@ table {
   ==============================================
 */
 
-h1, h3, h4, h5, p {
-  margin-bottom: 22px;
+h1,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 22px;
 }
 
 /**
@@ -87,14 +173,14 @@ h1, h3, h4, h5, p {
 */
 
 .btn {
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
 }
 
 .btn-alt {
-  border: 1px solid #dfe2e5;
-  padding: 10px 30px;
+    border: 1px solid #dfe2e5;
+    padding: 10px 30px;
 }
 
 /**
@@ -104,5 +190,52 @@ h1, h3, h4, h5, p {
 */
 
 .hero {
-  padding: 22px 80px 66px 80px;
+    padding: 22px 80px 66px 80px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*
+  =================================
+  Primary Header
+  =================================
+*/
+.logo {
+    border-top: 4px solid #648880;
+    padding: 40px 0 22px 0;
+    float: left;
+}
+
+/**
+  ====================================
+  Primary Footer
+  ====================================
+*/
+
+.primary-footer small {
+    float: left;
+}
+
+.primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
 }

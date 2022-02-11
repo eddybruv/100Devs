@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 100px;
+  width: auto;
+  text-align: center;
+  border: 2px solid gray;
+  clear: both;
+}
+
+section {
+  height: 300px;
+  width: 33.33%;
+  border: 2px solid gray;
+  text-align: center;
+  float: left;
+}
+

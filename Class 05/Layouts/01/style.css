@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+header, 
+footer {
+  height: 100px;
+  border: 2px solid lime;
+  clear: both;
+}
+
+.up {
+  height: 200px;
+  width: 33.33%;
+  /* clear: both; */
+  border: 2px solid lime;
+  float: left;
+}
+
+.down {
+  height: 300px;
+  width: 50%;
+  float: left;
+  border: 2px solid lime;
+}

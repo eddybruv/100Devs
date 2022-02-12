@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 100px;
+  border: 2px solid aquamarine;
+  clear: both;
+}
+
+.first {
+  height: 400px;
+  width: 20%;
+  border: 2px solid aquamarine;
+  float: left;
+}
+
+.mid {
+  height: 400px;
+  width: 40%;
+  border: 2px solid aquamarine;
+  float: left;
+}
+
+.last {
+  height: 400px;
+  width: 20%;
+  border: 2px solid aquamarine;
+  float: left;
+}

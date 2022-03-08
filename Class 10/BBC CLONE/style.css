@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/**
+  ============================
+  Header
+  ============================
+*/
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: .5rem 1.2rem;
+  border-right: .5px solid rgb(139, 137, 137);
+  font-size: 16px;
+  padding-top: 1rem
+}
+
+.sign-in {
+  padding-right: 5rem;
+}
+
+.more {
+  word-spacing: 3rem;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.welcome {
+  color: #646464;
+  font-size: 1.2em;
+}
+
+.date {
+  color:rgb(185, 181, 181);
+  font-size: 1.5em;
+}
+
+/**
+  ==========================
+  big section
+  ==========================
+*/
+
+.main-events {
+  display: flex;
+  /* height: 45vh; */
+  height: 351px;
+  gap: 1rem;
+  color: white;
+}
+
+.headline {
+  background: url("img/woman.png") no-repeat;
+  width: 50%;
+  background-size:auto;
+  background-position: center;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.other-events {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  grid-template-rows:1fr 1fr;
+  gap: 1rem .5rem;
+}
+
+.other-events > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: .5rem;
+}
+
+.uganda-protest {
+  background: url("img/school.jpg") no-repeat;
+  background-size: cover;
+}
+
+.football {
+  background: url("img/_123580386_robertson-pyatov.png");
+  background-size: cover;
+}
+
+.nigerians {
+  background: url("img/nigeria-ban.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.african-wars {
+  background: url("img/refugee-crying.jpg") no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  font-size: 1.2em;
+  padding-bottom: 1%;
+}
+
+.heading * {
+  font-weight: 200;
+}
+
+.description {
+  font-size: 1em;
+  padding-bottom: .5rem;
+}
+
+.topic {
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  padding-left: .5rem;
+  border-left: 3px solid red;
+}
+
+.news h3{
+  margin: 2rem 0 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid red;
+  color:rgb(139, 137, 137);
+}
+
+/**
+  ==========================
+  Lower section with 3 divs 
+  ==========================
+*/
+
+.news-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.news-container img {
+  width: 100%;
+}
+
+.news-container h4 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.news-container .description {
+  padding-top: .5rem;
+  color:rgb(94, 85, 85);
+  font-size: .9em;
+}
